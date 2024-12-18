@@ -1,0 +1,6 @@
+<app-header></app-header>
+<main>
+    @for(pokemon of PokeService.loadedPokemons; track $index) {
+        <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+    }    
+</main>
