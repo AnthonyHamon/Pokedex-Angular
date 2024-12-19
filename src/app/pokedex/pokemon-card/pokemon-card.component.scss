@@ -2,9 +2,10 @@
     width: 20%;
 }
 
-section{
+main{
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: rgba($color: #FFFFFF, $alpha: 0.8);
     gap: 20px;
     border-radius: 15px;
@@ -12,6 +13,10 @@ section{
     height: 100%;
 
     >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
         >img{
             max-width: 100%;
         }
