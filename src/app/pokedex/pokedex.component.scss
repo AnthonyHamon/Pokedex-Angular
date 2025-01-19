@@ -1,27 +1,25 @@
-:host{
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    gap: 20px;
-}
-
-section{
-    position: absolute;
-    width: 100%;
+.pokedex {
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-rows: 4rem 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "pokemon-list topBar"
+        "pokemon-list pokemon-overview";
     height: 100vh;
-    >img{
-        width: 100%;
-        height: 100vh;
-    }
 }
 
-main{
-    overflow-y:scroll;
-    position:absolute;
-    top:28%;
-    display: flex;
-    justify-content: center;
-    flex-flow: wrap;
-    gap: 20px;
-    height: 53%
+.pokemon-list {
+    grid-area: pokemon-list;
+}
+
+.topBar {
+    grid-area: topBar;
+}
+
+.pokemon-overview {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-area: pokemon-overview;
 }

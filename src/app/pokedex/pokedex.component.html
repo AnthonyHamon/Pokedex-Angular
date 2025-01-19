@@ -1,10 +1,5 @@
-<section>
-    <img src="assets/img/pokedex-bg.webp" alt="">
-    <app-header></app-header>
-<main>
-    @for(pokemon of PokeService.loadedPokemons; track $index) {
-        <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
-    }    
-</main>
+<section class="pokedex">
+    <app-top-bar></app-top-bar>
+    <app-pokemon-list></app-pokemon-list>
+    <app-pokemon-overview></app-pokemon-overview>
 </section>
-
