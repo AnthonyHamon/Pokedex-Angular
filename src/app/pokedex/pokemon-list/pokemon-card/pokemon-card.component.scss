@@ -1,0 +1,25 @@
+:host{
+    max-width: 20%;
+    max-height: 40%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+    gap: 20px;
+
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 3.125rem;
+        >img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
