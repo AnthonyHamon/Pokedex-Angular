@@ -1,16 +1,43 @@
+// .pokedex {
+//     display: grid;
+//     grid-template-columns: 0.5fr 1.5fr;
+//     grid-template-rows: 4rem 1fr;
+//     gap: 0px 0px;
+//     grid-template-areas:
+//         "pokemon-list topBar"
+//         "pokemon-list pokemon-overview";
+//     height: 100vh;
+// }
+
+// .pokemon-list {
+//     grid-area: pokemon-list;
+// }
+
+// .topBar {
+//     grid-area: topBar;
+// }
+
+// .pokemon-overview {
+//     display: grid;
+//     grid-auto-columns: 1fr;
+//     gap: 0px 0px;
+//     grid-area: pokemon-overview;
+// }
+
 .pokedex {
     display: grid;
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 16.25rem 1fr;
     grid-template-rows: 4rem 1fr;
     gap: 0px 0px;
     grid-template-areas:
-        "pokemon-list topBar"
+        "topBar topBar"
         "pokemon-list pokemon-overview";
     height: 100vh;
-}
-
-.pokemon-list {
-    grid-area: pokemon-list;
+    max-width: 1920px;
+    // background: rgb(255, 71, 71);
+    // background: radial-gradient(circle, rgba(255, 71, 71, 1) 0%, rgba(240, 33, 33, 1) 45%, rgba(182, 24, 24, 1) 100%);
+    background-color: rgb(55, 55, 55);
+    overflow: hidden;
 }
 
 .topBar {
@@ -22,4 +49,10 @@
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-area: pokemon-overview;
+}
+
+.pokemon-list {
+    grid-area: pokemon-list;
+    width: max-content;
+    height: 100%;
 }
