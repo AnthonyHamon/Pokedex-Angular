@@ -1,25 +1,38 @@
-:host{
+:host {
     max-width: 20%;
     max-height: 40%;
 }
 
-main{
+main {
     display: flex;
     align-items: center;
     justify-content: start;
     padding-left: 1.75rem;
     padding-right: 1.75rem;
-    background-color: rgba($color: #FFFFFF, $alpha: 0.8);
+    // background: linear-gradient(0deg, rgba(240, 33, 33, 1) 39%, rgba(255, 50, 50, 1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(63, 63, 63, 1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 2%, rgba(63, 63, 63, 1) 99%);
     gap: 20px;
 
-    >div{
+    >div {
         display: flex;
         justify-content: center;
         align-items: center;
         max-width: 3.125rem;
-        >img{
+        width: 4.125rem;
+        max-height: 4.125rem;
+        padding: 4px 0;
+
+        >img {
             width: 100%;
-            height: auto;
+            height: 4.125rem;
+            max-height: 4.125rem;
         }
+    }
+
+    >section {
+        color: white;
     }
 }
