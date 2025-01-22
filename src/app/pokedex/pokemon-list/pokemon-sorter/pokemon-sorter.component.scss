@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(63, 63, 63, 1) 2%, rgba(0, 0, 0, 1) 6%);
+}
+
+.sort-by-region-btn {
+    background: rgb(40, 40, 40);
+    background: linear-gradient(0deg, rgba(40, 40, 40, 1) 0%, rgba(107, 107, 107, 1) 100%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sort-by-btn{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 1rem;
+
+}
