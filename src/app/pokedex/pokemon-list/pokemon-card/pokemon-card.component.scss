@@ -7,14 +7,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+    padding-left: 1rem;
     // background: linear-gradient(0deg, rgba(240, 33, 33, 1) 39%, rgba(255, 50, 50, 1) 100%);
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(63, 63, 63, 1) 100%);
     background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 2%, rgba(63, 63, 63, 1) 99%);
-    gap: 20px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 2%, rgba(63, 63, 63, 1) 100%);
+    gap: 8px;
 
     >div {
         display: flex;
