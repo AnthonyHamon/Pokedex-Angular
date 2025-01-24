@@ -1,3 +1,44 @@
-:host{
+:host {
     grid-area: topBar;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 33%, rgba(112, 112, 112, 1) 100%);
+    color: white;
+}
+
+main {
+    display: flex;
+    height: 100%;
+
+    .pokedex-logo {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        gap: 8px;
+
+        >span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+    }
+
+    .pokemon-main-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        >div{
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+
+            >div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }
