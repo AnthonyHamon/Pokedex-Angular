@@ -26,18 +26,24 @@ main {
 
     .pokemon-main-info {
         display: flex;
-        justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 80%;
 
         >div{
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 100%;
             gap: 3rem;
 
             >div{
                 display: flex;
                 flex-direction: column;
+            }
+
+            >span{
+                font-weight: 700;
+                font-size: 28px;
             }
         }
     }
