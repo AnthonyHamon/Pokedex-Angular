@@ -1,8 +1,8 @@
 <main>
         <app-pokemon-sorter></app-pokemon-sorter>
     <section>
-        @for(pokemon of PokeService.loadedPokemons; track $index) {
-            <app-pokemon-card [pokemon]="pokemon"></app-pokemon-card>
+        @for(pokemon of pokeService.loadedPokemons; track $index) {
+            <app-pokemon-card (click)="renderPokemonInformations(pokemon)" [pokemon]="pokemon"></app-pokemon-card>
         }
     </section>
     
